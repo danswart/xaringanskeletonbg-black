@@ -19,18 +19,18 @@
  *
  * ------------------------------------------------------- */
 @import url(https://indestructibletype.com/fonts/Jost.css);
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600i,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap);
 @import url(https://indestructibletype.com/fonts/Jost.css);
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC:400&display=swap);
 
 :root {
   /* Fonts */
-  --text-font-family: Avenier;
+  --text-font-family: Jost;
   --text-font-is-google: 0;
   --text-font-family-fallback: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial;
   --text-font-base: sans-serif;
-  --header-font-family: 'Josefin Sans';
+  --header-font-family: 'Roboto Slab';
   --header-font-is-google: 1;
   --header-font-family-fallback: Georgia, serif;
   --code-font-family: 'Source Code Pro';
@@ -45,8 +45,8 @@
 
   /* Colors */
   --text-color: ivory;
-  --header-color: ivory;
-  --background-color: darkslategray;
+  --header-color: #FFFFFF;
+  --background-color: black;
   --link-color: lightcoral;
   --text-bold-color: #FF5733;
   --code-highlight-color: transparent;
@@ -54,13 +54,13 @@
   --inverse-background-color: black;
   --inverse-header-color: #FFFFFF;
   --inverse-link-color: lightcoral;
-  --title-slide-background-color: darkslategray;
+  --title-slide-background-color: black;
   --title-slide-text-color: #FFFFFF;
-  --header-background-color: ivory;
-  --header-background-text-color: darkslategray;
-  --primary: darkslategray;
-  --secondary: ivory;
-  --white: ivory;
+  --header-background-color: #FFFFFF;
+  --header-background-text-color: black;
+  --primary: black;
+  --secondary: #FFFFFF;
+  --white: #FFFFFF;
   --black: #000004;
   --red: red;
   --purple: #3e2f5b;
@@ -180,10 +180,10 @@ a, a > code {
   float: left;
 }
 .left-column h2, .left-column h3 {
-  color: darkslategray99;
+  color: black99;
 }
 .left-column h2:last-of-type, .left-column h3:last-child {
-  color: darkslategray;
+  color: black;
 }
 .right-column {
   width: 75%;
@@ -222,7 +222,7 @@ th, td {
 .remark-slide table:not(.table-unshaded) thead,
 .remark-slide table:not(.table-unshaded) tfoot,
 .remark-slide table:not(.table-unshaded) tr:nth-child(even) {
-  background: #FFFFFC;
+  background: #FFFFFF;
 }
 table.dataTable tbody {
   background-color: var(--background-color);
@@ -232,7 +232,7 @@ table.dataTable.display tbody tr.odd {
   background-color: var(--background-color);
 }
 table.dataTable.display tbody tr.even {
-  background-color: #FFFFFC;
+  background-color: #FFFFFF;
 }
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.5);

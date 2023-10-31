@@ -1,7 +1,7 @@
 ---
 title: .f3[It Pays to...] .f1[Rename Your New .Rmd File]
 subtitle: .f1[To] .f-6.cfb[index.Rmd]
-author: by .gold[Dan Swart, .i.o[Business Developer]]
+author: .b[by] .gold[Dan Swart, .i.o[Business Developer]]
 institute: ("Part of the .i.char[It Pays...] &nbsp;series")
 date: 
 output:
@@ -30,14 +30,36 @@ library(xaringanthemer) # Custom 'xaringan' CSS Themes
 
 style_duo_accent(
   colors = c(
+    red = "red",
+    purple = "#3e2f5b",
+    lightpurple = "#DCD0FF",
+    lavender = "#967bb6",
+    violet = "#8A2BE2",
+    periwinkle = "#ccccff",
     orange = "#FF5733", # Orange - Innovation and Excitement
     green = "#136f63", # Teal - Creativity and Growth
+    white = "#FFFFFF",
     yellow = "yellow", # Yellow - Optimism and Energy:
+    gold = "gold",
     turquoise = "#00C5CD", # Turquoise - Balance and Clarity:
+    aquamarine = "#7FFFD4",
+    teal = "#2c8475",
+    darkgreen = "#006400",
+    forestgreen = "forestgreen",
+    firebrick = "firebrick",
+    lightcoral = "lightcoral",
+    black = "black",
+    charcoal = "#36454F",
     purple = "#7030A0", # Purple (#7030A0) - Imagination and Open-mindedness
     blue = "#0070C0", #Blue - Persuasion and Trust:
-    primary_color = "black",  
+    cornflowerblue = "cornflowerblue",
+    deepskyblue = "deepskyblue",
+    dodgerblue = "dodgerblue",
+    steelblue = "steelblue",
+    royalblue = "royalblue"),
+  primary_color = "black",  
   secondary_color = "#FFFFFF",
+  # secondary_color = "yellow",
   black_color = "#000004",
   white_color = "#FFFFFF",
   base_font_size = "20px",
@@ -46,6 +68,7 @@ style_duo_accent(
   header_font_google = google_font("Roboto Slab", "400", "700"),
   header_font_weight = "400",
   inverse_background_color = "black",
+  # inverse_header_color = "#eaeaea",
   inverse_header_color = "#FFFFFF",
   title_slide_text_color = "#FFFFFF",
   text_slide_number_color = "#FFFFFF",
@@ -60,8 +83,8 @@ style_duo_accent(
   # table_row_even_background_color = lighten_color("white", 0.9),
   extra_fonts = list(
     "https://indestructibletype.com/fonts/Jost.css",
-    google_font("Amatic SC", "400"))
-  )
+    google_font("Amatic SC", "400")
+    )
 )
 
 ```
@@ -128,7 +151,7 @@ xaringanExtra::use_banner(
 
 ```{r xaringanExtra-style_banner, echo=FALSE}
 xaringanExtra::style_banner(
-    text_color = NULL,
+    text_color = "red",
     background_color = NULL,
     padding_horizontal = NULL,
     padding_vertical = NULL,
